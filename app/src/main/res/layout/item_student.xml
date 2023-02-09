@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="4dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/personAvatar"
+            android:layout_width="0dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gita"
+            android:layout_weight="2"
+            android:contentDescription="@string/avatar_image" />
+
+        <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:id="@+id/personPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="@tools:sample/us_phones" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:paddingVertical="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:contentDescription="@string/btn_more" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

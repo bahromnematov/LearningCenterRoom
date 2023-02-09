@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LearningCenterRoom</string>
+    <string name="btn_more">btnMore</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="avatar_image">avatar image</string>
+    <string name="add_btn">addBtn</string>
+</resources>
